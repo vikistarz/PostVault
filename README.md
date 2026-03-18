@@ -1,16 +1,25 @@
-# post_vault
+# Flutter Posts App
 
-A new Flutter project.
+A Flutter app that fetches posts from a REST API, displays them in a list, allows users to mark favorites, and view post details.
 
-## Getting Started
+## Features
 
-This project is a starting point for a Flutter application.
+- Fetch posts from API
+- Favorite/unfavorite posts using Riverpod
+- Post detail screen with scrollable and styled content
+- Clean UI design
 
-A few resources to get you started if this is your first Flutter project:
+## Architecture & Libraries
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+- **Architecture**: MVVM-like with Repository pattern
+- **State Management**: Riverpod
+- **HTTP Requests**: `http` package
+- **JSON Parsing**: Dart `convert` library
+- **UI**: Flutter widgets, `Card`, `ListTile`, `AppBar`
+- **Favorites**: `StateNotifier` + `Set<int>` to track favorite post IDs
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Setup Instructions
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/vikistarz/PostVault.git
